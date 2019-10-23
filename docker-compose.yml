@@ -1,0 +1,20 @@
+version: '3'
+
+volumes:
+  karaf:
+    driver: local
+
+services:
+
+  karaf:
+    image: pcharoen/karaf:4.0.10
+    ports:
+      - "8181:8181"
+      - "9080:9080"
+      - "1099:1099"
+      - "8101:8101"
+      - "44444:44444"
+    env_file:
+      - .env_triplestore
+    volumes: 
+      - karaf:/opt
