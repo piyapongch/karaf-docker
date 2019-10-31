@@ -11,3 +11,8 @@ $ docker build -t pcharoen/karaf:4.0.10 .
 $ docker login
 $ docker push pcharoen/karaf:4.0.10
 ```
+
+## Run 
+```shell
+$ docker-compose up -d
+```
